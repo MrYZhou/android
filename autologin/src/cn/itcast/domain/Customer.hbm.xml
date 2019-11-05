@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">    
+<hibernate-mapping>
+    <!-- name代表的是实体类名，table代表的表名 -->
+    <class name="cn.itcast.domain.Customer" table="customer">
+        <!-- name=id代表的是customer对应java类中的属性 column=id代表的是table表中的对应的字段 -->
+        <id name="id"  >
+            <generator class="native"/><!-- 主键生成策略 ，id是主键-->           
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="age" column="age" type="integer"/>
+        <property name="sex" column="sex" type="string"/>
+        <property name="city" column="city" type="string"/>
+        <property name="password" column="password" type="string"/>
+    </class>
+</hibernate-mapping>

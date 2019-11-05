@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2e9f5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/corner"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出查询" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="支出类别" />
+
+        <Button
+            android:id="@+id/come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="categoryclick"
+            android:text="消费" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出日期"
+            android:textSize="20dp" />
+        <!--
+              <EditText
+            android:id="@+id/date_start"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bgcwhite"
+            android:textSize="20dp" />
+        -->
+
+        <DatePicker
+            android:id="@+id/date_start"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="到"
+            android:textSize="20dp" />
+
+        <!--
+            <EditText
+            android:id="@+id/date_end"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bgcwhite"
+            android:textSize="20dp" />
+        -->
+
+        <DatePicker
+            android:id="@+id/date_end"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+    </LinearLayout>
+
+    <!-- 金额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出金额:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/mon_start"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bgcwhite"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="到"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/mon_end"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bgcwhite"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick1"
+            android:text="查询" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick2"
+            android:text="返回" />
+    </LinearLayout>
+
+</LinearLayout>

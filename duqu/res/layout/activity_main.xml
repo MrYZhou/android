@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="这是信息读取和保存的页面"
+        android:textColor="#3C3C3C"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/information"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0.95" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#f8e2A5"
+        android:onClick="onClick1"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#f8e2A5"
+        android:onClick="onClick2"
+        android:text="读取" />
+
+</LinearLayout>
